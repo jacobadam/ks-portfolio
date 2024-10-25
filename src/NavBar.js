@@ -20,6 +20,14 @@ const NavBar = () => {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75"
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-500 transition hover:text-gray-500/75"
                     href="/about"
                   >
                     About
@@ -94,6 +102,15 @@ const NavBar = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white shadow-lg">
             <ul className="flex flex-col items-center gap-6 text-sm p-4">
+              <li>
+                <a
+                  className="text-gray-500 transition hover:text-gray-500/75"
+                  href="/"
+                  onClick={toggleMenu}
+                >
+                  Home
+                </a>
+              </li>
               <li>
                 <a
                   className="text-gray-500 transition hover:text-gray-500/75"
